@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".select_date_request">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/req_dates_spinner"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        >
+    </Spinner>
+
+    <TextView
+        android:id="@+id/time_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/req_dates_spinner"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="30dp"
+        android:text="Time:"
+        android:textSize="20dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/time_txt"
+        android:layout_below="@+id/req_dates_spinner"
+        android:id="@+id/time_edit"
+        android:hint="AN/FN"
+        />
+    <Button
+        android:id="@+id/proceed_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/time_edit"
+        android:layout_marginTop="10dp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/colorAccent"
+        android:onClick="proceed"
+        android:text="Proceed" />
+
+</RelativeLayout>
